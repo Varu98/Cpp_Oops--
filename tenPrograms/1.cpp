@@ -12,6 +12,7 @@ public:
 void add::addNumbers()
 {
     int arr[10];
+
     int count = 0;
     for (int i = 0; i < 5; i++)
     {
