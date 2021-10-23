@@ -2,32 +2,31 @@
 #include <iostream>
 using namespace std;
 
-class add
+class divide
 {
 
 public:
-    void addNumbers();
+    void divideNumbers();
 };
 
-void add::addNumbers()
+void divide::divideNumbers()
 {
-    int arr[10];
+    int arr[2];
     int count = 0;
-    for (int i = 0; i < 5; i++)
+    for (int i = 0; i <= 1; i++)
     {
         cout << "Enter The " << i << " Number\n";
         cin >> arr[i];
-        count = count + arr[i];
     }
-
+    count = arr[0] / arr[1];
     cout << "The Sum Is " << count << endl;
 }
 
 int main()
 {
 
-    add obj;
-    obj.addNumbers();
+    divide obj;
+    obj.divideNumbers();
 
     return 0;
 }
